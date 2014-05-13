@@ -13,7 +13,7 @@ namespace SalespersonDemo
     {
         // sub-class attributes
         private int totalSold;
-        private int commissionEarned;
+        private double commissionEarned;
         private double commissionRate;
 
         // constructor
@@ -34,15 +34,15 @@ namespace SalespersonDemo
             {
                 if (value >= 0)
                 {
-                    totalSold = value;
+                    totalSold += value;
                 } // end if
                 else
                 {
-                    totalSold = 0;
+                    totalSold += 0;
                 } // end else
             } // end set
         } // TotalSold property end
-        public int CommissionEarned
+        public double CommissionEarned
         {
             get
             {
@@ -50,13 +50,13 @@ namespace SalespersonDemo
             } // end get
             set
             {
-                if (value >= 0)
+                if (value >= 0.0)
                 {
-                    commissionEarned = value;
+                    commissionEarned += value;
                 } // end if
                 else
                 {
-                    commissionEarned = 0;
+                    commissionEarned += 0.0;
                 } // end else
             } // end set
         } // CommissionEarned property end
@@ -82,9 +82,9 @@ namespace SalespersonDemo
         // class set method
         private void setClass(double cr)
         {
-            CommissionRate = cr;
+            CommissionRate = cr * 0.01;
             TotalSold = 0;
-            CommissionEarned = 0;
+            CommissionEarned = 0.0;
         } // end class set method
 
         // ISellable methods from interface
@@ -97,14 +97,8 @@ namespace SalespersonDemo
             if (val > 0)
             {
                 TotalSold += val;
-                calculateCommission(val);
+                CommissionEarned += (double)val * CommissionRate;
             } // end if
         } // MakeSale method end
-
-        // calculateCommission method sets the commission
-        private void calculateCommission(int val)
-        {
-            CommissionEarned += (int)(val * (CommissionRate / 100));
-        } // calculateCommission method end
     } // RealEstateSalesperson class end
 }

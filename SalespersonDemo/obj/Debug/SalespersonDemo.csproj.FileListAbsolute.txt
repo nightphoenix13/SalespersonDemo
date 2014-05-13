@@ -1,1 +1,9 @@
 C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\bin\Debug\SalespersonDemo.exe.config
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\bin\Debug\SalespersonDemo.exe
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\bin\Debug\SalespersonDemo.pdb
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\obj\Debug\SalespersonDemo.csprojResolveAssemblyReference.cache
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\obj\Debug\SalespersonDemo.Form1.resources
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\obj\Debug\SalespersonDemo.Properties.Resources.resources
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\obj\Debug\SalespersonDemo.csproj.GenerateResource.Cache
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\obj\Debug\SalespersonDemo.exe
+C:\Users\Phoenix\Desktop\Tech & Coding Tools\Coding Projects\SalespersonDemo\SalespersonDemo\obj\Debug\SalespersonDemo.pdb

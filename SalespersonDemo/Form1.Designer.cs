@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.resGroupBox = new System.Windows.Forms.GroupBox();
+            this.resCommissionEarnedLabel = new System.Windows.Forms.Label();
+            this.resTotalSoldLabel = new System.Windows.Forms.Label();
+            this.resSaleTextBox = new System.Windows.Forms.TextBox();
+            this.resSaleLabel = new System.Windows.Forms.Label();
+            this.resSaleButton = new System.Windows.Forms.Button();
+            this.resPitchButton = new System.Windows.Forms.Button();
+            this.resNameLabel = new System.Windows.Forms.Label();
+            this.resCreateButton = new System.Windows.Forms.Button();
+            this.resCommissionTextBox = new System.Windows.Forms.TextBox();
+            this.resCommissionLabel = new System.Windows.Forms.Label();
+            this.resLNTextBox = new System.Windows.Forms.TextBox();
+            this.resLNLabel = new System.Windows.Forms.Label();
+            this.resFNTextBox = new System.Windows.Forms.TextBox();
+            this.resFNLabel = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gsGroupBox = new System.Windows.Forms.GroupBox();
-            this.resFNLabel = new System.Windows.Forms.Label();
-            this.gsFNLabel = new System.Windows.Forms.Label();
-            this.resFNTextBox = new System.Windows.Forms.TextBox();
-            this.gsFNTextBox = new System.Windows.Forms.TextBox();
-            this.resLNLabel = new System.Windows.Forms.Label();
-            this.gsLNLabel = new System.Windows.Forms.Label();
-            this.resLNTextBox = new System.Windows.Forms.TextBox();
-            this.gsLNTextBox = new System.Windows.Forms.TextBox();
-            this.resCommissionLabel = new System.Windows.Forms.Label();
-            this.resCommissionTextBox = new System.Windows.Forms.TextBox();
-            this.resCreateButton = new System.Windows.Forms.Button();
-            this.gsCreateButton = new System.Windows.Forms.Button();
-            this.resNameLabel = new System.Windows.Forms.Label();
-            this.gsNameLabel = new System.Windows.Forms.Label();
-            this.resPitchButton = new System.Windows.Forms.Button();
-            this.resSaleButton = new System.Windows.Forms.Button();
-            this.resSaleLabel = new System.Windows.Forms.Label();
-            this.resSaleTextBox = new System.Windows.Forms.TextBox();
-            this.gsSaleLabel = new System.Windows.Forms.Label();
-            this.gsSaleTextBox = new System.Windows.Forms.TextBox();
-            this.gsPitchButton = new System.Windows.Forms.Button();
-            this.gsSaleButton = new System.Windows.Forms.Button();
-            this.resTotalSoldLabel = new System.Windows.Forms.Label();
-            this.resCommissionEarnedLabel = new System.Windows.Forms.Label();
             this.gsTotalSoldLabel = new System.Windows.Forms.Label();
+            this.gsSaleButton = new System.Windows.Forms.Button();
+            this.gsPitchButton = new System.Windows.Forms.Button();
+            this.gsSaleTextBox = new System.Windows.Forms.TextBox();
+            this.gsSaleLabel = new System.Windows.Forms.Label();
+            this.gsNameLabel = new System.Windows.Forms.Label();
+            this.gsCreateButton = new System.Windows.Forms.Button();
+            this.gsLNTextBox = new System.Windows.Forms.TextBox();
+            this.gsLNLabel = new System.Windows.Forms.Label();
+            this.gsFNTextBox = new System.Windows.Forms.TextBox();
+            this.gsFNLabel = new System.Windows.Forms.Label();
             this.resGroupBox.SuspendLayout();
             this.gsGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,138 @@
             this.resGroupBox.TabIndex = 0;
             this.resGroupBox.TabStop = false;
             this.resGroupBox.Text = "Real Estate Salesperson";
+            // 
+            // resCommissionEarnedLabel
+            // 
+            this.resCommissionEarnedLabel.AutoSize = true;
+            this.resCommissionEarnedLabel.Location = new System.Drawing.Point(10, 224);
+            this.resCommissionEarnedLabel.Name = "resCommissionEarnedLabel";
+            this.resCommissionEarnedLabel.Size = new System.Drawing.Size(117, 13);
+            this.resCommissionEarnedLabel.TabIndex = 15;
+            this.resCommissionEarnedLabel.Text = "Commission Earned: $0";
+            this.resCommissionEarnedLabel.Visible = false;
+            // 
+            // resTotalSoldLabel
+            // 
+            this.resTotalSoldLabel.AutoSize = true;
+            this.resTotalSoldLabel.Location = new System.Drawing.Point(10, 206);
+            this.resTotalSoldLabel.Name = "resTotalSoldLabel";
+            this.resTotalSoldLabel.Size = new System.Drawing.Size(103, 13);
+            this.resTotalSoldLabel.TabIndex = 14;
+            this.resTotalSoldLabel.Text = "Total Value Sold: $0";
+            this.resTotalSoldLabel.Visible = false;
+            // 
+            // resSaleTextBox
+            // 
+            this.resSaleTextBox.Location = new System.Drawing.Point(95, 141);
+            this.resSaleTextBox.Name = "resSaleTextBox";
+            this.resSaleTextBox.Size = new System.Drawing.Size(63, 20);
+            this.resSaleTextBox.TabIndex = 13;
+            this.resSaleTextBox.Text = "0";
+            this.resSaleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.resSaleTextBox.Visible = false;
+            // 
+            // resSaleLabel
+            // 
+            this.resSaleLabel.AutoSize = true;
+            this.resSaleLabel.Location = new System.Drawing.Point(7, 144);
+            this.resSaleLabel.Name = "resSaleLabel";
+            this.resSaleLabel.Size = new System.Drawing.Size(82, 13);
+            this.resSaleLabel.TabIndex = 12;
+            this.resSaleLabel.Text = "Amount of Sale:";
+            this.resSaleLabel.Visible = false;
+            // 
+            // resSaleButton
+            // 
+            this.resSaleButton.Location = new System.Drawing.Point(82, 167);
+            this.resSaleButton.Name = "resSaleButton";
+            this.resSaleButton.Size = new System.Drawing.Size(75, 23);
+            this.resSaleButton.TabIndex = 11;
+            this.resSaleButton.Text = "Add Sale";
+            this.resSaleButton.UseVisualStyleBackColor = true;
+            this.resSaleButton.Visible = false;
+            this.resSaleButton.Click += new System.EventHandler(this.resSaleButton_Click);
+            // 
+            // resPitchButton
+            // 
+            this.resPitchButton.Location = new System.Drawing.Point(5, 167);
+            this.resPitchButton.Name = "resPitchButton";
+            this.resPitchButton.Size = new System.Drawing.Size(75, 23);
+            this.resPitchButton.TabIndex = 10;
+            this.resPitchButton.Text = "Pitch";
+            this.resPitchButton.UseVisualStyleBackColor = true;
+            this.resPitchButton.Visible = false;
+            this.resPitchButton.Click += new System.EventHandler(this.resPitchButton_Click);
+            // 
+            // resNameLabel
+            // 
+            this.resNameLabel.AutoSize = true;
+            this.resNameLabel.Location = new System.Drawing.Point(7, 122);
+            this.resNameLabel.Name = "resNameLabel";
+            this.resNameLabel.Size = new System.Drawing.Size(35, 13);
+            this.resNameLabel.TabIndex = 9;
+            this.resNameLabel.Text = "Name";
+            this.resNameLabel.Visible = false;
+            // 
+            // resCreateButton
+            // 
+            this.resCreateButton.Location = new System.Drawing.Point(44, 87);
+            this.resCreateButton.Name = "resCreateButton";
+            this.resCreateButton.Size = new System.Drawing.Size(75, 23);
+            this.resCreateButton.TabIndex = 8;
+            this.resCreateButton.Text = "Create";
+            this.resCreateButton.UseVisualStyleBackColor = true;
+            this.resCreateButton.Click += new System.EventHandler(this.resCreateButton_Click);
+            // 
+            // resCommissionTextBox
+            // 
+            this.resCommissionTextBox.Location = new System.Drawing.Point(104, 61);
+            this.resCommissionTextBox.Name = "resCommissionTextBox";
+            this.resCommissionTextBox.Size = new System.Drawing.Size(53, 20);
+            this.resCommissionTextBox.TabIndex = 7;
+            this.resCommissionTextBox.Text = "0.0";
+            this.resCommissionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // resCommissionLabel
+            // 
+            this.resCommissionLabel.AutoSize = true;
+            this.resCommissionLabel.Location = new System.Drawing.Point(7, 64);
+            this.resCommissionLabel.Name = "resCommissionLabel";
+            this.resCommissionLabel.Size = new System.Drawing.Size(91, 13);
+            this.resCommissionLabel.TabIndex = 6;
+            this.resCommissionLabel.Text = "Commission Rate:";
+            // 
+            // resLNTextBox
+            // 
+            this.resLNTextBox.Location = new System.Drawing.Point(73, 39);
+            this.resLNTextBox.Name = "resLNTextBox";
+            this.resLNTextBox.Size = new System.Drawing.Size(85, 20);
+            this.resLNTextBox.TabIndex = 5;
+            // 
+            // resLNLabel
+            // 
+            this.resLNLabel.AutoSize = true;
+            this.resLNLabel.Location = new System.Drawing.Point(7, 42);
+            this.resLNLabel.Name = "resLNLabel";
+            this.resLNLabel.Size = new System.Drawing.Size(61, 13);
+            this.resLNLabel.TabIndex = 4;
+            this.resLNLabel.Text = "Last Name:";
+            // 
+            // resFNTextBox
+            // 
+            this.resFNTextBox.Location = new System.Drawing.Point(73, 17);
+            this.resFNTextBox.Name = "resFNTextBox";
+            this.resFNTextBox.Size = new System.Drawing.Size(85, 20);
+            this.resFNTextBox.TabIndex = 3;
+            // 
+            // resFNLabel
+            // 
+            this.resFNLabel.AutoSize = true;
+            this.resFNLabel.Location = new System.Drawing.Point(7, 20);
+            this.resFNLabel.Name = "resFNLabel";
+            this.resFNLabel.Size = new System.Drawing.Size(60, 13);
+            this.resFNLabel.TabIndex = 2;
+            this.resFNLabel.Text = "First Name:";
             // 
             // groupBox2
             // 
@@ -113,175 +245,37 @@
             this.gsGroupBox.TabStop = false;
             this.gsGroupBox.Text = "Girl Scout";
             // 
-            // resFNLabel
+            // gsTotalSoldLabel
             // 
-            this.resFNLabel.AutoSize = true;
-            this.resFNLabel.Location = new System.Drawing.Point(7, 20);
-            this.resFNLabel.Name = "resFNLabel";
-            this.resFNLabel.Size = new System.Drawing.Size(60, 13);
-            this.resFNLabel.TabIndex = 2;
-            this.resFNLabel.Text = "First Name:";
+            this.gsTotalSoldLabel.AutoSize = true;
+            this.gsTotalSoldLabel.Location = new System.Drawing.Point(11, 206);
+            this.gsTotalSoldLabel.Name = "gsTotalSoldLabel";
+            this.gsTotalSoldLabel.Size = new System.Drawing.Size(99, 13);
+            this.gsTotalSoldLabel.TabIndex = 10;
+            this.gsTotalSoldLabel.Text = "Total Boxes Sold: 0";
+            this.gsTotalSoldLabel.Visible = false;
             // 
-            // gsFNLabel
+            // gsSaleButton
             // 
-            this.gsFNLabel.AutoSize = true;
-            this.gsFNLabel.Location = new System.Drawing.Point(6, 20);
-            this.gsFNLabel.Name = "gsFNLabel";
-            this.gsFNLabel.Size = new System.Drawing.Size(60, 13);
-            this.gsFNLabel.TabIndex = 0;
-            this.gsFNLabel.Text = "First Name:";
+            this.gsSaleButton.Location = new System.Drawing.Point(84, 167);
+            this.gsSaleButton.Name = "gsSaleButton";
+            this.gsSaleButton.Size = new System.Drawing.Size(75, 23);
+            this.gsSaleButton.TabIndex = 9;
+            this.gsSaleButton.Text = "Add Sale";
+            this.gsSaleButton.UseVisualStyleBackColor = true;
+            this.gsSaleButton.Visible = false;
+            this.gsSaleButton.Click += new System.EventHandler(this.gsSaleButton_Click);
             // 
-            // resFNTextBox
+            // gsPitchButton
             // 
-            this.resFNTextBox.Location = new System.Drawing.Point(73, 17);
-            this.resFNTextBox.Name = "resFNTextBox";
-            this.resFNTextBox.Size = new System.Drawing.Size(85, 20);
-            this.resFNTextBox.TabIndex = 3;
-            // 
-            // gsFNTextBox
-            // 
-            this.gsFNTextBox.Location = new System.Drawing.Point(72, 17);
-            this.gsFNTextBox.Name = "gsFNTextBox";
-            this.gsFNTextBox.Size = new System.Drawing.Size(85, 20);
-            this.gsFNTextBox.TabIndex = 1;
-            // 
-            // resLNLabel
-            // 
-            this.resLNLabel.AutoSize = true;
-            this.resLNLabel.Location = new System.Drawing.Point(7, 42);
-            this.resLNLabel.Name = "resLNLabel";
-            this.resLNLabel.Size = new System.Drawing.Size(61, 13);
-            this.resLNLabel.TabIndex = 4;
-            this.resLNLabel.Text = "Last Name:";
-            // 
-            // gsLNLabel
-            // 
-            this.gsLNLabel.AutoSize = true;
-            this.gsLNLabel.Location = new System.Drawing.Point(6, 42);
-            this.gsLNLabel.Name = "gsLNLabel";
-            this.gsLNLabel.Size = new System.Drawing.Size(61, 13);
-            this.gsLNLabel.TabIndex = 2;
-            this.gsLNLabel.Text = "Last Name:";
-            // 
-            // resLNTextBox
-            // 
-            this.resLNTextBox.Location = new System.Drawing.Point(73, 39);
-            this.resLNTextBox.Name = "resLNTextBox";
-            this.resLNTextBox.Size = new System.Drawing.Size(85, 20);
-            this.resLNTextBox.TabIndex = 5;
-            // 
-            // gsLNTextBox
-            // 
-            this.gsLNTextBox.Location = new System.Drawing.Point(72, 39);
-            this.gsLNTextBox.Name = "gsLNTextBox";
-            this.gsLNTextBox.Size = new System.Drawing.Size(85, 20);
-            this.gsLNTextBox.TabIndex = 3;
-            // 
-            // resCommissionLabel
-            // 
-            this.resCommissionLabel.AutoSize = true;
-            this.resCommissionLabel.Location = new System.Drawing.Point(7, 64);
-            this.resCommissionLabel.Name = "resCommissionLabel";
-            this.resCommissionLabel.Size = new System.Drawing.Size(91, 13);
-            this.resCommissionLabel.TabIndex = 6;
-            this.resCommissionLabel.Text = "Commission Rate:";
-            // 
-            // resCommissionTextBox
-            // 
-            this.resCommissionTextBox.Location = new System.Drawing.Point(104, 61);
-            this.resCommissionTextBox.Name = "resCommissionTextBox";
-            this.resCommissionTextBox.Size = new System.Drawing.Size(53, 20);
-            this.resCommissionTextBox.TabIndex = 7;
-            this.resCommissionTextBox.Text = "0.0";
-            this.resCommissionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // resCreateButton
-            // 
-            this.resCreateButton.Location = new System.Drawing.Point(44, 87);
-            this.resCreateButton.Name = "resCreateButton";
-            this.resCreateButton.Size = new System.Drawing.Size(75, 23);
-            this.resCreateButton.TabIndex = 8;
-            this.resCreateButton.Text = "Create";
-            this.resCreateButton.UseVisualStyleBackColor = true;
-            // 
-            // gsCreateButton
-            // 
-            this.gsCreateButton.Location = new System.Drawing.Point(46, 87);
-            this.gsCreateButton.Name = "gsCreateButton";
-            this.gsCreateButton.Size = new System.Drawing.Size(75, 23);
-            this.gsCreateButton.TabIndex = 4;
-            this.gsCreateButton.Text = "Create";
-            this.gsCreateButton.UseVisualStyleBackColor = true;
-            // 
-            // resNameLabel
-            // 
-            this.resNameLabel.AutoSize = true;
-            this.resNameLabel.Location = new System.Drawing.Point(7, 122);
-            this.resNameLabel.Name = "resNameLabel";
-            this.resNameLabel.Size = new System.Drawing.Size(35, 13);
-            this.resNameLabel.TabIndex = 9;
-            this.resNameLabel.Text = "Name";
-            this.resNameLabel.Visible = false;
-            // 
-            // gsNameLabel
-            // 
-            this.gsNameLabel.AutoSize = true;
-            this.gsNameLabel.Location = new System.Drawing.Point(11, 122);
-            this.gsNameLabel.Name = "gsNameLabel";
-            this.gsNameLabel.Size = new System.Drawing.Size(35, 13);
-            this.gsNameLabel.TabIndex = 5;
-            this.gsNameLabel.Text = "Name";
-            this.gsNameLabel.Visible = false;
-            // 
-            // resPitchButton
-            // 
-            this.resPitchButton.Location = new System.Drawing.Point(5, 167);
-            this.resPitchButton.Name = "resPitchButton";
-            this.resPitchButton.Size = new System.Drawing.Size(75, 23);
-            this.resPitchButton.TabIndex = 10;
-            this.resPitchButton.Text = "Pitch";
-            this.resPitchButton.UseVisualStyleBackColor = true;
-            this.resPitchButton.Visible = false;
-            // 
-            // resSaleButton
-            // 
-            this.resSaleButton.Location = new System.Drawing.Point(82, 167);
-            this.resSaleButton.Name = "resSaleButton";
-            this.resSaleButton.Size = new System.Drawing.Size(75, 23);
-            this.resSaleButton.TabIndex = 11;
-            this.resSaleButton.Text = "Add Sale";
-            this.resSaleButton.UseVisualStyleBackColor = true;
-            this.resSaleButton.Visible = false;
-            // 
-            // resSaleLabel
-            // 
-            this.resSaleLabel.AutoSize = true;
-            this.resSaleLabel.Location = new System.Drawing.Point(7, 144);
-            this.resSaleLabel.Name = "resSaleLabel";
-            this.resSaleLabel.Size = new System.Drawing.Size(82, 13);
-            this.resSaleLabel.TabIndex = 12;
-            this.resSaleLabel.Text = "Amount of Sale:";
-            this.resSaleLabel.Visible = false;
-            // 
-            // resSaleTextBox
-            // 
-            this.resSaleTextBox.Location = new System.Drawing.Point(95, 141);
-            this.resSaleTextBox.Name = "resSaleTextBox";
-            this.resSaleTextBox.Size = new System.Drawing.Size(63, 20);
-            this.resSaleTextBox.TabIndex = 13;
-            this.resSaleTextBox.Text = "0";
-            this.resSaleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.resSaleTextBox.Visible = false;
-            // 
-            // gsSaleLabel
-            // 
-            this.gsSaleLabel.AutoSize = true;
-            this.gsSaleLabel.Location = new System.Drawing.Point(11, 144);
-            this.gsSaleLabel.Name = "gsSaleLabel";
-            this.gsSaleLabel.Size = new System.Drawing.Size(63, 13);
-            this.gsSaleLabel.TabIndex = 6;
-            this.gsSaleLabel.Text = "Boxes Sold:";
-            this.gsSaleLabel.Visible = false;
+            this.gsPitchButton.Location = new System.Drawing.Point(6, 167);
+            this.gsPitchButton.Name = "gsPitchButton";
+            this.gsPitchButton.Size = new System.Drawing.Size(75, 23);
+            this.gsPitchButton.TabIndex = 8;
+            this.gsPitchButton.Text = "Pitch";
+            this.gsPitchButton.UseVisualStyleBackColor = true;
+            this.gsPitchButton.Visible = false;
+            this.gsPitchButton.Click += new System.EventHandler(this.gsPitchButton_Click);
             // 
             // gsSaleTextBox
             // 
@@ -293,55 +287,67 @@
             this.gsSaleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.gsSaleTextBox.Visible = false;
             // 
-            // gsPitchButton
+            // gsSaleLabel
             // 
-            this.gsPitchButton.Location = new System.Drawing.Point(6, 167);
-            this.gsPitchButton.Name = "gsPitchButton";
-            this.gsPitchButton.Size = new System.Drawing.Size(75, 23);
-            this.gsPitchButton.TabIndex = 8;
-            this.gsPitchButton.Text = "Pitch";
-            this.gsPitchButton.UseVisualStyleBackColor = true;
-            this.gsPitchButton.Visible = false;
+            this.gsSaleLabel.AutoSize = true;
+            this.gsSaleLabel.Location = new System.Drawing.Point(11, 144);
+            this.gsSaleLabel.Name = "gsSaleLabel";
+            this.gsSaleLabel.Size = new System.Drawing.Size(63, 13);
+            this.gsSaleLabel.TabIndex = 6;
+            this.gsSaleLabel.Text = "Boxes Sold:";
+            this.gsSaleLabel.Visible = false;
             // 
-            // gsSaleButton
+            // gsNameLabel
             // 
-            this.gsSaleButton.Location = new System.Drawing.Point(84, 167);
-            this.gsSaleButton.Name = "gsSaleButton";
-            this.gsSaleButton.Size = new System.Drawing.Size(75, 23);
-            this.gsSaleButton.TabIndex = 9;
-            this.gsSaleButton.Text = "Add Sale";
-            this.gsSaleButton.UseVisualStyleBackColor = true;
-            this.gsSaleButton.Visible = false;
+            this.gsNameLabel.AutoSize = true;
+            this.gsNameLabel.Location = new System.Drawing.Point(11, 122);
+            this.gsNameLabel.Name = "gsNameLabel";
+            this.gsNameLabel.Size = new System.Drawing.Size(35, 13);
+            this.gsNameLabel.TabIndex = 5;
+            this.gsNameLabel.Text = "Name";
+            this.gsNameLabel.Visible = false;
             // 
-            // resTotalSoldLabel
+            // gsCreateButton
             // 
-            this.resTotalSoldLabel.AutoSize = true;
-            this.resTotalSoldLabel.Location = new System.Drawing.Point(10, 206);
-            this.resTotalSoldLabel.Name = "resTotalSoldLabel";
-            this.resTotalSoldLabel.Size = new System.Drawing.Size(106, 13);
-            this.resTotalSoldLabel.TabIndex = 14;
-            this.resTotalSoldLabel.Text = "Total Value Sold: $0.";
-            this.resTotalSoldLabel.Visible = false;
+            this.gsCreateButton.Location = new System.Drawing.Point(46, 87);
+            this.gsCreateButton.Name = "gsCreateButton";
+            this.gsCreateButton.Size = new System.Drawing.Size(75, 23);
+            this.gsCreateButton.TabIndex = 4;
+            this.gsCreateButton.Text = "Create";
+            this.gsCreateButton.UseVisualStyleBackColor = true;
+            this.gsCreateButton.Click += new System.EventHandler(this.gsCreateButton_Click);
             // 
-            // resCommissionEarnedLabel
+            // gsLNTextBox
             // 
-            this.resCommissionEarnedLabel.AutoSize = true;
-            this.resCommissionEarnedLabel.Location = new System.Drawing.Point(10, 224);
-            this.resCommissionEarnedLabel.Name = "resCommissionEarnedLabel";
-            this.resCommissionEarnedLabel.Size = new System.Drawing.Size(120, 13);
-            this.resCommissionEarnedLabel.TabIndex = 15;
-            this.resCommissionEarnedLabel.Text = "Commission Earned: $0.";
-            this.resCommissionEarnedLabel.Visible = false;
+            this.gsLNTextBox.Location = new System.Drawing.Point(72, 39);
+            this.gsLNTextBox.Name = "gsLNTextBox";
+            this.gsLNTextBox.Size = new System.Drawing.Size(85, 20);
+            this.gsLNTextBox.TabIndex = 3;
             // 
-            // gsTotalSoldLabel
+            // gsLNLabel
             // 
-            this.gsTotalSoldLabel.AutoSize = true;
-            this.gsTotalSoldLabel.Location = new System.Drawing.Point(11, 206);
-            this.gsTotalSoldLabel.Name = "gsTotalSoldLabel";
-            this.gsTotalSoldLabel.Size = new System.Drawing.Size(99, 13);
-            this.gsTotalSoldLabel.TabIndex = 10;
-            this.gsTotalSoldLabel.Text = "Total Boxes Sold: 0";
-            this.gsTotalSoldLabel.Visible = false;
+            this.gsLNLabel.AutoSize = true;
+            this.gsLNLabel.Location = new System.Drawing.Point(6, 42);
+            this.gsLNLabel.Name = "gsLNLabel";
+            this.gsLNLabel.Size = new System.Drawing.Size(61, 13);
+            this.gsLNLabel.TabIndex = 2;
+            this.gsLNLabel.Text = "Last Name:";
+            // 
+            // gsFNTextBox
+            // 
+            this.gsFNTextBox.Location = new System.Drawing.Point(72, 17);
+            this.gsFNTextBox.Name = "gsFNTextBox";
+            this.gsFNTextBox.Size = new System.Drawing.Size(85, 20);
+            this.gsFNTextBox.TabIndex = 1;
+            // 
+            // gsFNLabel
+            // 
+            this.gsFNLabel.AutoSize = true;
+            this.gsFNLabel.Location = new System.Drawing.Point(6, 20);
+            this.gsFNLabel.Name = "gsFNLabel";
+            this.gsFNLabel.Size = new System.Drawing.Size(60, 13);
+            this.gsFNLabel.TabIndex = 0;
+            this.gsFNLabel.Text = "First Name:";
             // 
             // Form1
             // 

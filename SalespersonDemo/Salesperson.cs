@@ -35,7 +35,7 @@ namespace SalespersonDemo
         // toString override
         public override string ToString()
         {
-            return first + " " + last;
+            return First + " " + Last;
         } // end toString override
     } // Salesperson class end
 }
