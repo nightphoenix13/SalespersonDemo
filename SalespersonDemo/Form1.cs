@@ -81,7 +81,7 @@ namespace SalespersonDemo
 
         private void resSaleButton_Click(object sender, EventArgs e)
         {
-            res.TotalSold += Convert.ToInt32(resSaleTextBox.Text);
+            res.MakeSale(Convert.ToInt32(resSaleTextBox.Text));
             resTotalSoldLabel.Text = "Total Value Sold: $" + res.TotalSold;
             resCommissionEarnedLabel.Text = "Commission Earned: $" +
                 res.CommissionEarned;
@@ -89,7 +89,7 @@ namespace SalespersonDemo
 
         private void gsSaleButton_Click(object sender, EventArgs e)
         {
-            gs.BoxesSold += Convert.ToInt32(gsSaleTextBox.Text);
+            gs.MakeSale(Convert.ToInt32(gsSaleTextBox.Text));
             gsTotalSoldLabel.Text = "Total Boxes Sold: " + gs.BoxesSold;
         } // resPitchButton_Click method end
     }
